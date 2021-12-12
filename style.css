@@ -9,18 +9,22 @@
     background-position: center;
     background-size: cover;
     position: relative;
-
 }
 
-h1 {
-    background-color: rgb(241, 212, 173);
-  }
-  
-  div {
-    background-color: rgb(89, 230, 230);
-    color: rgb(231, 216, 216);
-  }
-  
-  p {
-    background-color: rgb(174, 0, 255);
-  }
+@media(max-width:700px){
+    .text-box h1{
+        font-size:20px;
+    }
+    .nav-links ul li {
+        
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44689;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right:0;
+        text-align:left;
+    }
+}
