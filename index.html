@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://kit.fontawesome.com/154a96d62d.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carlos Mario</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     </head>
 
     
 <body>
     <section class="header">
         <nav>
-
+            <a href="index.html"><img src="images/carlos2.png"></a>
+            <div class="nav-links">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="ABOUT">ABOUT</a></li>
+                    <li><a href="GALLERY">GALLERY</a></li>
+                   
+            </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
         </nav>
+
+    <div class="text-box">
+        <h1>Carlos Mario Lopez</h1>
+        <a href="" class="hero-btn">contact</a>
+    </div>
     </section>
     <a href="mailto:lopezcarlos1096@gmail.com">lopezcarlos1096@gmail.com</a>
+
+
+<!------ JavaScript for toggle menu--->
+<script>
+    const navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
 </body>
 
 </html>
